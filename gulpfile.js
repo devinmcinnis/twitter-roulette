@@ -64,7 +64,7 @@
   });
 
   gulp.task('stylus', function() {
-    gulp.src('./styles/main.styl')
+    gulp.src('./styles/style.styl')
       .pipe(plugin.plumber())
       .pipe(plugin.stylus())
       .pipe(plugin.autoprefixer({ cascade: true }))
@@ -130,7 +130,7 @@
   });
 
   gulp.task('stylus:build', function() {
-    gulp.src('./styles/main.styl')
+    gulp.src('./styles/style.styl')
       .pipe(plugin.plumber())
       .pipe(plugin.stylus({ compress: true }))
       .pipe(plugin.autoprefixer({ cascade: true }))
