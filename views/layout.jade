@@ -30,7 +30,7 @@ html.wf-loading
     meta(property="og:site_name" content="init() frontend")
 
     block meta-og
-      meta(property="og:title" content="init() frontend - Home")
+      meta(property="og:title" content="init() frontend")
       meta(property="og:description" content="Site description here")
       meta(property="og:image", content="https://www.axiomzen.co/images/az-logo-250.png")
       meta(property="og:url", content="https://wwww.axiomzen.co")
@@ -43,7 +43,8 @@ html.wf-loading
     //- link(href="https://plus.google.com/xxxx" rel="publisher")
 
     //- build:css /css/main.css
-    link(rel="stylesheet", href="/css/main.css")
+    link(rel="stylesheet", href="/bower_components/normalize-css/normalize.css")
+    link(rel="stylesheet", href="/css/style.css")
     //- endbuild
 
   body

@@ -87,7 +87,7 @@
     plugin.watch({ glob: 'styles/**/*.styl' }, ['stylus', 'livereload']);
     plugin.watch({ glob: 'images/**/*.*' }, ['images:copy', 'livereload']);
     plugin.watch({ glob: 'fonts/**/*.*' }, ['fonts:copy', 'livereload']);
-    plugin.watch({ glob: 'bower_components/**/*.js' }, ['bower:install', 'livereload']);
+    plugin.watch({ glob: 'bower.json' }, ['bower:install', 'livereload']);
   });
 
   /*
