@@ -64,7 +64,7 @@
   });
 
   gulp.task('stylus', function() {
-    gulp.src('./styles/main.styl')
+    gulp.src('./styles/style.styl')
       .pipe(plugin.plumber())
       .pipe(plugin.stylus())
       .pipe(plugin.autoprefixer({ cascade: true }))
@@ -87,7 +87,7 @@
     plugin.watch({ glob: 'styles/**/*.styl' }, ['stylus', 'livereload']);
     plugin.watch({ glob: 'images/**/*.*' }, ['images:copy', 'livereload']);
     plugin.watch({ glob: 'fonts/**/*.*' }, ['fonts:copy', 'livereload']);
-    plugin.watch({ glob: 'bower_components/**/*.js' }, ['bower:install', 'livereload']);
+    plugin.watch({ glob: 'bower.json' }, ['bower:install', 'livereload']);
   });
 
   /*
@@ -130,7 +130,7 @@
   });
 
   gulp.task('stylus:build', function() {
-    gulp.src('./styles/main.styl')
+    gulp.src('./styles/style.styl')
       .pipe(plugin.plumber())
       .pipe(plugin.stylus({ compress: true }))
       .pipe(plugin.autoprefixer({ cascade: true }))

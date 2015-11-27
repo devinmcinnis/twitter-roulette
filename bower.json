@@ -21,6 +21,7 @@
     "fastclick": "~1.0.3",
     "jquery": "~2.1.4",
     "viewport-units-buggyfill": "~0.4.1",
-    "webfontloader": "~1.6.4"
+    "webfontloader": "~1.6.4",
+    "normalize-css": "~3.0.3"
   }
 }
