@@ -12,7 +12,7 @@ module.exports = function() {
     },
     'production': {
       'env': 'production',
-      'title': '- init() frontend'
+      'title': '- Tweet Raffle'
     }
   };
 

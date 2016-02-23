@@ -49,7 +49,7 @@
 
   gulp.task('bower:install', plugin.shell.task([
     'bower prune',
-    'bower install'
+    'bower install -o'
   ]));
 
   gulp.task('fonts:copy', function() {
